@@ -21,3 +21,4 @@ after_success:
   - docker push 96vksingh/fibo-nginx
   - docker push 96vksingh/fibo-worker
   - docker push 96vksingh/fibo-server
+  #see changes on docker hub
