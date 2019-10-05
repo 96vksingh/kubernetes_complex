@@ -22,3 +22,15 @@ after_success:
   - docker push 96vksingh/fibo-worker
   - docker push 96vksingh/fibo-server
   #see changes on docker hub
+deploy:
+  provider: elasticbeanstack
+  region: us-east-1
+  app: fibb-docker
+  env: FibbDocker-env
+  bucket_name: elasticbeanstalk-us-east-1-624042903166
+  bucket_path: docker-multi
+  on:
+    branch: master
+  access_key: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: $AWS_SECRET_KEY
