@@ -1,6 +1,6 @@
 {
 	"AWSEBDockerrunVersion": 2,
-	"containerDefinations": [{
+	"containerDefinitions": [{
 			"name": "client",
 			"image": "96vksingh/fibo-container-ex",
 			"hostname": "client",
