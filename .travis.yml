@@ -23,7 +23,7 @@ after_success:
   - docker push 96vksingh/fibo-server
   #see changes on docker hub
 deploy:
-  provider: elasticbeanstack
+  provider: elasticbeanstalk
   region: us-east-1
   app: fibb-docker
   env: FibbDocker-env
